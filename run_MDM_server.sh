@@ -1,0 +1,3 @@
+#nohup python3 run_server.py -num_worker=2 -device_map=0 -port=5555 -port_out=5556 -http_port=10001 > run_flush.log 2>&1 & #-cpu
+python3 run_server.py -num_worker=2 -port=5555 -port_out=5556 -device_map=0,1 -run_script_dir=/workspace/devspace/messageDisMiddle/messageDisMiddle/run_script
+#MDM-server-start -num_worker=4 -device_map=0 -port=5555 -port_out=5556 -run_script_dir=/workspace/devspace/messageDisMiddle/messageDisMiddle/example #-cpu
